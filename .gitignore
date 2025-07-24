@@ -81,6 +81,13 @@ coverage/
 
 # Firebase
 firebase_app_id_file.json
+# Firebase Configuration Files (contain sensitive API keys)
+google-services.json
+GoogleService-Info.plist
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+firebase-config.json
+firebase-config.plist
 
 # Environment files
 .env
