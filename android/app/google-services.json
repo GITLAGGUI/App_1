@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "646401074445",
+    "firebase_url": "https://hotplate-4b9e6-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "hotplate-4b9e6",
+    "storage_bucket": "hotplate-4b9e6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646401074445:android:b0691c6da309ddf9273c44",
+        "android_client_info": {
+          "package_name": "com.example.hotplate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "646401074445-brbobfvcgdglq0olfep3s3bfe1e2sknv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hotplate",
+            "certificate_hash": "66d98b941f2b7ddf16320ac76234e6143a066a66"
+          }
+        },
+        {
+          "client_id": "646401074445-1fjfs33j400bmejkih4ir9pogvfurlb9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRLqBW6tJ9_yZVKfff-tjF9JvOMo-qiEU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "646401074445-1fjfs33j400bmejkih4ir9pogvfurlb9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "646401074445-fkm7s8q0bunk604buutlleic21u7knje.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.hotplate"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
