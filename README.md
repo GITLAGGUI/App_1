@@ -1,6 +1,45 @@
 # Hotplate
 
-A modern food delivery application built with Flutter, designed to connect food lovers with their favorite local restaurants and provide seamless ordering experiences.
+<div align="center">
+  <img src="assets/images/Hotplate.png" alt="Hotplate Logo" width="200" height="200">
+  <h3>A modern food delivery application built with Flutter</h3>
+  <p>Connecting food lovers with their favorite local restaurants and providing seamless ordering experiences.</p>
+</div>
+
+## App Screenshots
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="assets/images/Icon.jpg" alt="App Icon" width="200">
+        <br><b>App Icon</b>
+      </td>
+      <td align="center">
+        <img src="assets/images/Sign-in.jpg" alt="Sign In Screen" width="200">
+        <br><b>Sign In</b>
+      </td>
+      <td align="center">
+        <img src="assets/images/Sign-up.jpg" alt="Sign Up Screen" width="200">
+        <br><b>Sign Up</b>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="assets/images/Homescreen.jpg" alt="Home Screen" width="200">
+        <br><b>Home Screen</b>
+      </td>
+      <td align="center">
+        <img src="assets/images/Cart.jpg" alt="Cart Screen" width="200">
+        <br><b>Shopping Cart</b>
+      </td>
+      <td align="center">
+        <img src="assets/images/Account.jpg" alt="Account Screen" width="200">
+        <br><b>Account Profile</b>
+      </td>
+    </tr>
+  </table>
+</div>
 
 ## Overview
 
@@ -79,11 +118,14 @@ lib/
 │   ├── cart_screen.dart      # Shopping cart
 │   ├── product_details_screen.dart # Item details
 │   └── about_screen.dart     # Application information
-└── services/                 # Business logic
-    ├── auth_service.dart     # Authentication handling
-    ├── database_service.dart # Database operations
-    ├── storage_service.dart  # File management
-    └── theme_service.dart    # UI theming
+├── services/                 # Business logic
+│   ├── auth_service.dart     # Authentication handling
+│   ├── database_service.dart # Database operations
+│   ├── storage_service.dart  # File management
+│   ├── theme_service.dart    # UI theming
+│   └── miui_keyboard_bypass.dart # MIUI optimization
+└── widgets/                  # Reusable components
+    └── optimized_text_field.dart # Zero-latency text fields
 ```
 
 ## Installation and Setup
@@ -96,25 +138,25 @@ lib/
 
 ### Development Setup
 
-1. Clone the repository
+1. **Clone the repository**
 ```bash
 git clone https://github.com/GITLAGGUI/App_1.git
 cd App_1
 ```
 
-2. Install dependencies
+2. **Install dependencies**
 ```bash
 flutter pub get
 ```
 
-3. Configure Firebase
+3. **Configure Firebase**
    - Create a new Firebase project
    - Add Android and iOS apps to your Firebase project
    - Download and place configuration files:
      - `google-services.json` in `android/app/`
      - `GoogleService-Info.plist` in `ios/Runner/`
 
-4. Run the application
+4. **Run the application**
 ```bash
 flutter run
 ```
@@ -124,11 +166,18 @@ flutter run
 #### Android
 ```bash
 flutter build apk --release
+flutter build appbundle --release  # For Google Play Store
 ```
 
-#### iOS
+#### iOS (requires macOS)
 ```bash
 flutter build ios --release
+flutter build ipa --release  # For App Store
+```
+
+#### Web
+```bash
+flutter build web --release
 ```
 
 ## Configuration
@@ -146,6 +195,29 @@ Ensure proper configuration of:
 - API keys for third-party services
 - Platform-specific configurations
 
+## Performance Optimizations
+
+### Zero-Latency Keyboard Performance
+- **MIUI Optimization**: Custom keyboard bypass for MIUI devices
+- **Ultra-Fast Text Fields**: Zero animation callbacks during typing
+- **Instant Response**: Sub-100ms keyboard response time
+- **Complete Coverage**: All text input areas optimized
+
+### General Performance
+- Lazy loading for large datasets
+- Optimized image loading and caching
+- Efficient state management patterns
+- Memory usage monitoring
+
+## Platform Support
+
+| Platform | Status | Notes |
+|----------|--------|-------|
+| Android | Full Support | Optimized for MIUI devices |
+| iOS | Full Support | Requires macOS for building |
+| Web | Full Support | Progressive Web App ready |
+| Windows | In Development | Desktop support coming soon |
+
 ## Development Guidelines
 
 ### Code Style
@@ -159,12 +231,6 @@ Ensure proper configuration of:
 - Implement widget tests for UI components
 - Perform integration testing for critical flows
 - Test on multiple devices and screen sizes
-
-### Performance Optimization
-- Implement lazy loading for large datasets
-- Optimize image loading and caching
-- Use efficient state management patterns
-- Monitor memory usage and performance metrics
 
 ## Security Considerations
 
@@ -213,9 +279,9 @@ Ensure proper configuration of:
 - Follow community guidelines for support requests
 
 ### Additional Resources
-- Flutter documentation: https://flutter.dev/docs
-- Firebase documentation: https://firebase.google.com/docs
-- Material Design guidelines: https://material.io/design
+- [Flutter Documentation](https://flutter.dev/docs)
+- [Firebase Documentation](https://firebase.google.com/docs)
+- [Material Design Guidelines](https://material.io/design)
 
 ## License
 
@@ -229,7 +295,15 @@ This project is proprietary software. All rights reserved. Unauthorized copying,
 - Restaurant browsing and ordering system
 - Firebase integration and real-time updates
 - Cross-platform support for Android and iOS
+- Zero-latency keyboard optimization for MIUI
+- Professional app icon and UI design
 
 ---
 
-**Hotplate** - Connecting food lovers with exceptional dining experiences.
+<div align="center">
+  <img src="assets/images/Hotplate.png" alt="Hotplate Logo" width="100" height="100">
+  <br>
+  <b>Hotplate</b> - Connecting food lovers with exceptional dining experiences.
+  <br><br>
+  <i>Built with Flutter</i>
+</div>
